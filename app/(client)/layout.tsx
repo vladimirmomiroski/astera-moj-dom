@@ -1,15 +1,20 @@
 import React from 'react'
+import Navbar from '@/app/(client)/components/navbar/navbar';
+import Footer from '@/app/(client)/components/footer/footer';
+
 
 const ClientLayout = ({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) => {
-  return (
-    <div>
-        <p>client layout</p>
-        {children}</div>
-  )
+    return (
+        <div>
+            <Navbar />
+            {children}
+            <Footer />
+        </div>
+    )
 }
 
 export default ClientLayout
