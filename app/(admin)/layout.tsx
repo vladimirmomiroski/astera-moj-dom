@@ -1,15 +1,14 @@
-import React from 'react'
-
 const AdminLayout = ({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) => {
-    return (
-        <div>
-            <p>admin layout</p>
-            {children}</div>
-    )
-}
+  return (
+    <div>
+      <p>admin layout</p>
+      {children}
+    </div>
+  );
+};
 
-export default AdminLayout
+export default AdminLayout;
