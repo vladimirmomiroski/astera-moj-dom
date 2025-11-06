@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-type Props = {
+type PropsLogo = {
   width: number;
   height: number;
 };
 
-const Logo = (props: Props) => {
-  const { width, height } = props;
+const Logo = ({ width, height }: PropsLogo) => {
+
   return (
     <Image
-      src="/2.png"
+      src="/logo1.png"
       width={width}
       height={height}
       alt="Астера мој дом лого"
