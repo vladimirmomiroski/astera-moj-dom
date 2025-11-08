@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-type PropsLogo = {
+type LogoProps = {
   width: number;
   height: number;
 };
 
-const Logo = ({ width, height }: PropsLogo) => {
+const Logo = ({ width, height }: LogoProps) => {
 
   return (
     <Image
