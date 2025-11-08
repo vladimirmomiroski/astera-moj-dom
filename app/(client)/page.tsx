@@ -1,5 +1,13 @@
+import Hero from "./components/ui/hero/hero";
+
 const Home = () => {
-  return <div>This is homepage</div>;
+  return (
+    <>
+      <Hero />
+      test outside banner from page
+    </>
+  )
+
 };
 
 export default Home;

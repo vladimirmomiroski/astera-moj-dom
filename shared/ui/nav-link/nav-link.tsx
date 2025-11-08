@@ -3,18 +3,18 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-type PropsNavLink = {
+type NavLinkProps = {
     href: string,
     children: React.ReactNode,
 }
 
-const NavLink = ({ href, children }: PropsNavLink) => {
+const NavLink = ({ href, children }: NavLinkProps) => {
 
     const pathname = usePathname();
     const isActive = pathname === href;
 
     return (
-        <Link href={href} className={`${isActive ? 'text-gold' : 'text-black'
+        <Link href={href} className={`cursor-pointer hover:text-gold ${isActive ? 'text-gold' : 'text-black'
             }`}>
             {children}
         </Link>

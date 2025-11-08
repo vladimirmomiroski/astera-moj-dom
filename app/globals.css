@@ -25,13 +25,15 @@ h6 {
 
 @theme {
   --color-black: #1b1b1b;
-  --color-secondary: #ffffff;
+  --color-white: #ffffff;
   --color-blue: #2c3648;
   --color-gray: #6b7280;
   --color-gold: #edbf6d;
 
-  --text-large: 3.2rem;
+  --text-large: 3.4rem;
   --text-medium: 1.1rem;
   --text-default: 1rem;
   --text-small: 0.875rem;
+
+  --dark-overlay: "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%)";
 }
