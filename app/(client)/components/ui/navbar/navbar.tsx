@@ -9,12 +9,12 @@ import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50">
-      <div className="bg-blue hidden sm:block">
+    <nav className="absolute top-0 left-0 right-0 z-50">
+      <div className="bg-light-blue hidden sm:block">
         <div className="py-2 px-5 flex justify-between items-center container mx-auto">
           <div>
-            <FontAwesomeIcon className="text-medium mr-1 text-gold" icon={faFacebook} />
-            <FontAwesomeIcon className="text-medium text-gold" icon={faInstagram} />
+            <FontAwesomeIcon className="text-medium mr-1 text-white cursor-pointer" icon={faFacebook} />
+            <FontAwesomeIcon className="text-medium text-white cursor-pointer" icon={faInstagram} />
           </div>
           <div className="flex items-center justify-around">
             <FontAwesomeIcon className="text-medium text-white pr-1" icon={faLocationDot} />
@@ -24,9 +24,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="container  flex justify-between items-center px-5 py-6 mx-auto">
+      <div className="container flex justify-between items-center px-5 py-6 mx-auto">
         < div >
-          <Logo width={115} height={115} />
+          <Logo width={115} height={115} src={"/logo1.png"} />
         </div >
         <div>
           <ul className="flex justify-between align-middle">
