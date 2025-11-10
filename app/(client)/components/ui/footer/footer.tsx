@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -10,23 +8,23 @@ const year: number = new Date().getFullYear()
 
 const Footer = () => {
   return <footer>
-    <div className="bg-[linear-gradient(180deg,_#1b1b1b_29%,_#323232_100%)]">
+    <div className="bg-[linear-gradient(180deg,#2c3648_50%,#3a465d_100%)]">
       <div className="container mx-auto px-5">
 
-        <div className="flex justify-center py-9">
+        <div className="flex justify-center py-8">
           <Logo width={150} height={150} src={"/logo2.png"} />
         </div>
         <div className="flex justify-between items-center">
-          <div>
-            <p className="text-white text-medium">Корисни Линкови:</p>
+          <div className="py-6">
             <ul className="flex justify-between items-center">
-              <li className=" mr-5 text-medium text-white"><NavLink href="/">Почетна</NavLink></li>
-              <li className="mr-5 text-medium text-white"><NavLink href="/about">За Нас</NavLink></li>
-              <li className="text-medium text-white"><NavLink href="/contact">Контакт</NavLink></li>
+              <li className=" mr-5 text-medium text-white"><NavLink href="/" color="text-white">Почетна</NavLink></li>
+              <li className="mr-5 text-medium text-white"><NavLink href="/about" color="text-white">За Нас</NavLink></li>
+              <li className="text-medium text-white"><NavLink href="/contact" color="text-white">Контакт</NavLink></li>
             </ul>
           </div>
           <div>
-            <p>icons</p>
+            <NavLink href="https://www.facebook.com/" target="_blank" color="text-white"><FontAwesomeIcon icon={faFacebook} className="text-large text-white" /></NavLink>
+            <NavLink href="https://www.instagram.com/" target="_blank" color="text-white"><FontAwesomeIcon icon={faInstagram} className="text-large text-white" /></NavLink>
           </div>
         </div>
 

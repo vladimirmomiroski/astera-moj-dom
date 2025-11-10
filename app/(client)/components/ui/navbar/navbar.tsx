@@ -13,8 +13,8 @@ const Navbar = () => {
       <div className="bg-light-blue hidden sm:block">
         <div className="py-2 px-5 flex justify-between items-center container mx-auto">
           <div>
-            <FontAwesomeIcon className="text-medium mr-1 text-white cursor-pointer" icon={faFacebook} />
-            <FontAwesomeIcon className="text-medium text-white cursor-pointer" icon={faInstagram} />
+            <NavLink href="https://www.facebook.com/" target="_blank" color="text-white"><FontAwesomeIcon icon={faFacebook} className="mr-1 text-medium text-white" /></NavLink>
+            <NavLink href="https://www.instagram.com/" target="_blank" color="text-white"><FontAwesomeIcon icon={faInstagram} className="mr-1 text-medium text-white" /></NavLink>
           </div>
           <div className="flex items-center justify-around">
             <FontAwesomeIcon className="text-medium text-white pr-1" icon={faLocationDot} />
@@ -30,9 +30,9 @@ const Navbar = () => {
         </div >
         <div>
           <ul className="flex justify-between align-middle">
-            <li className=" mr-5 text-medium"><NavLink href="/">Почетна</NavLink></li>
-            <li className="mr-5 text-medium"><NavLink href="/about">За Нас</NavLink></li>
-            <li className="text-medium"><NavLink href="/contact">Контакт</NavLink></li>
+            <li className=" mr-5 text-medium"><NavLink href="/" color="text-black" >Почетна</NavLink></li>
+            <li className="mr-5 text-medium"><NavLink href="/about" color="text-black">За Нас</NavLink></li>
+            <li className="text-medium"><NavLink href="/contact" color="text-black">Контакт</NavLink></li>
           </ul>
         </div>
       </div>
