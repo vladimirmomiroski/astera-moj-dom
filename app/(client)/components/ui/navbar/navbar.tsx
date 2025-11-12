@@ -1,4 +1,3 @@
-
 import Logo from "@/shared/ui/logo/logo"
 import NavLink from "@/shared/ui/nav-link/nav-link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,8 +5,8 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 
-const Navbar = () => {
 
+const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50">
       <div className="bg-light-blue hidden sm:block">
