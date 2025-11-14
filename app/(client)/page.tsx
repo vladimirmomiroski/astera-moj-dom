@@ -1,10 +1,11 @@
-import Hero from "./components/ui/hero/hero";
+import Hero from "./components/layout/hero/hero";
+import Listings from "./components/features/listings/listings";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      test outside banner from page
+      <Listings />
     </>
   )
 

@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
-
-
 const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50">
