@@ -1,5 +1,5 @@
-import Navbar from "@/app/(client)/components/ui/navbar/navbar";
-import Footer from "@/app/(client)/components/ui/footer/footer";
+import Navbar from "@/app/(client)/components/layout/navbar/navbar";
+import Footer from "@/app/(client)/components/layout/footer/footer";
 
 const ClientLayout = ({
   children,
