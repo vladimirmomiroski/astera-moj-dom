@@ -4,10 +4,9 @@ const AdminLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div>
-      <p>admin layout</p>
+    <main>
       {children}
-    </div>
+    </main>
   );
 };
 

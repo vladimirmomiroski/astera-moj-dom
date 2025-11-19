@@ -7,11 +7,13 @@ const ClientLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div>
+    <>
       <Navbar />
-      {children}
+      <main>
+        {children}
+      </main>
       <Footer />
-    </div>
+    </>
   );
 };
 
